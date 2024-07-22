@@ -1,0 +1,15 @@
+# listening port
+LISTENING_PORT=3001
+
+# for auth
+AUTH_API_KEY_HEADER_NAME=tobemodified
+AUTH_API_KEY_VALUE=tobemodified
+
+# for openai
+OPEN_AI_API_KEY=tobemodified
+OPEN_AI_MODEL=gpt-4o-mini
+
+# for docker
+DOCKER_CONTAINER_NAME=nora-backend
+DOCKER_IMAGE_NAME=nora-backend
+DOCKER_PORT=8081
