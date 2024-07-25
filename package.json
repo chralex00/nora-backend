@@ -30,6 +30,7 @@
     "joi": "^17.10.1",
     "morgan": "^1.10.0",
     "openai": "^4.52.7",
+    "path-scurry": "^2.0.0",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
     "rxjs": "^7.2.0"
