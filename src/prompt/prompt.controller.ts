@@ -1,4 +1,4 @@
-import { Body, Controller, Get, InternalServerErrorException, Logger, UseGuards } from "@nestjs/common";
+import { Body, Controller, Post, InternalServerErrorException, Logger, UseGuards } from "@nestjs/common";
 import { PromptService } from "./prompt.service";
 import { PromptRequestDto } from "./dtos/prompt-request.dto";
 import { ApiKeyAuthGuard } from "./guards/api-key-auth.guard";
@@ -10,7 +10,7 @@ export class PromptController {
 
   constructor(private readonly promptService: PromptService) {}
 
-  @Get()
+  @Post()
   public async prompt(@Body() promptRequestDto: PromptRequestDto): Promise<{ text: string | null; timestamp: string }> {
     try {
       const responseMessage = await this.promptService.promptRequest(promptRequestDto);

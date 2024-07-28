@@ -339,9 +339,6 @@
 		},
 		{
 			"name": "prompt",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
 			"request": {
 				"auth": {
 					"type": "apikey",
@@ -358,7 +355,7 @@
 						}
 					]
 				},
-				"method": "GET",
+				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
